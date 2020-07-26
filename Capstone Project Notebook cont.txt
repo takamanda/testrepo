@@ -1,0 +1,34 @@
+PC_User@DESKTOP-EBDFCJT MINGW64 ~/.ssh
+$ ssh-keygen -t rsa -b 4096 -C "<tyoshii157@gmail.com>"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/PC_User/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/PC_User/.ssh/id_rsa
+Your public key has been saved in /c/Users/PC_User/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:nX6xR+ecVtv8WyqWttw3D4zzx65ciyReMqxNxZwdo+o <tyoshii157@gmail.com>
+The key's randomart image is:
++---[RSA 4096]----+
+|                 |
+|                 |
+|               o |
+|         . .o + o|
+|        S o .*..o|
+|         .. o* ==|
+|          .B=++=B|
+|          *o@*o=B|
+|         . Eo+*BB|
++----[SHA256]-----+
+
+PC_User@DESKTOP-EBDFCJT MINGW64 ~/.ssh
+$ eval "$(ssh-agent -s)"
+Agent pid 1870
+
+PC_User@DESKTOP-EBDFCJT MINGW64 ~/.ssh
+$ ssh-add ~/.ssh/id_rsa
+Identity added: /c/Users/PC_User/.ssh/id_rsa (<tyoshii157@gmail.com>)
+
+
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCunQlBo28nf52MRNJRV7laAcuX76/UCw8WAwpN3k0vAvOTzByNem8XgC4vG5HS0293UD+8+bMbAzH8ZSfUMeQA/miRgY2/1cZN6My/cJKAOoxIsDmfFO21UUs8DjpLQGhMrHc1aB2DC9HzJqFTwvBGQIVjnivrmvL+jhp/Ezrzyd1sg1QPEMcOrC9a1yzYvQpVrs9rjR0yFBG6jORn9b4f7MY8P+VUbESNM86ureTwVz1yz5xKEHSp9Y571WdShXt0xxDMJm7qmlgu1eEKWfCXfdsWl3+rOEwGzgET5WNA/R4AAdxbIfh1UdQxKq/NdA0U7JIeR7vujDu+dtyL6F4e8N8ifYhZqmsDeain/VNCPncCM6XSlsXAjT+BSiQkp/on1e+0QJu+uQbyVIYqJubWA6V3XQX7xbCUTWbQ9Nj3uX11YNQfYh+GQmFQU101IxERMBmmd9ChOauQmaRI5m4/eN/mk65CHQtfYpnyFSdK09JuNsxWKx8u9JSCIiyhH9E2vsiptRFGi8bmy+TPyzSsbSmERVXtCqMkkGVSiumqnTaenzuCP56BEP2RneonTXHpnSK62Ysp7+z/U2cBa1f2sqDI0DMfdOw/XAsQumXf1T8cO2/r++NK2qbmVPfKsrM4m6MX4ZPIVUlYQwnM5Qy6feNHLGi+IAUEAk4X1/hJ6Q== <tyoshii157@gmail.com>
